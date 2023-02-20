@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     $comics = config('comics');
 
     return view('home', compact('comics'));
@@ -30,7 +30,7 @@ Route::get('/home/{param}', function($param){
     }
 
     return view('detail_comic', compact('single'));
-})->name('detail_comic');
+})->name('detail_comic');*/
 
 Route::get('/CHARACTERS', function () {
     return view('CHARACTERS');
