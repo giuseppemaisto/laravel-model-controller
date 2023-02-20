@@ -20,6 +20,10 @@ use App\Http\Controllers\ComicController as ComicController;
     return view('home', compact('comics'));
 })->name('home');
 
+*/
+
+Route::get('/',[ComicController::class,'index'])->name('home');
+
 Route::get('/home/{param}', function($param){
     $comics = config('comics');
 
@@ -31,9 +35,9 @@ Route::get('/home/{param}', function($param){
     }
 
     return view('detail_comic', compact('single'));
-})->name('detail_comic');*/
+})->name('detail_comic');
 
-Route::get('/',[ComicController::class,'index'])->name('home');
+
 
 Route::get('/CHARACTERS', function () {
     return view('CHARACTERS');

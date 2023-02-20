@@ -13,7 +13,7 @@
           @foreach ($comics as $key => $comic)
 
             <div class="col-2">
-            <a href="{{route('detail_comic', ['param'  => $key])}}">
+            <a href="{{route('detail_comic', $comic['id']-1)}}">
                 <div class="card">
                 
                     <img class="card-img-top img-fluid" src="{{$comic['thumb']}}" alt="{{$comic['thumb']}}">
